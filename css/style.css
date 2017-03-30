@@ -18,6 +18,20 @@ body {
   float: none;
   margin: 0 auto;
   background-color: white; }
+  .top-nav-pills a {
+    color: black; }
+
+section a {
+  color: black; }
+  section a:visited {
+    color: black;
+    text-decoration: none; }
+  section a:hover {
+    color: cornflowerblue;
+    text-decoration: none; }
+  section a:active {
+    color: black;
+    text-decoration: none; }
 
 #search-field .stylish-input-group .input-group-addon {
   background: white !important; }
