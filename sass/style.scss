@@ -5,7 +5,6 @@ body {
 	background-color: $lightColor;
 	//background-image: $bodyBgImage;
 	background-repeat: no-repeat;
-	//background-size: 100% 100%;
 	background-size: cover;
 }
 
@@ -13,7 +12,6 @@ body {
 	background-color: $lightColor;
 	//background-color: $boxTransparent !important;
 	//background-image: $bodyBgImage;
-	//color: $lightColor;
 	text-align: center;
 	font-family: 'Source Code Pro', monospace;
 }
@@ -37,7 +35,7 @@ body {
 section {
 	a {
 		color: black;
-		//text-decoration: none;
+		text-decoration: none;
 		&:visited {
 			color: black;
 			text-decoration: none;
@@ -75,15 +73,33 @@ section {
 		max-width: 850px;
 		max-height: 350px;
 	}
-	p {
-		width: 850px;
-	}
 }
 
 .side-bar {
 	#soMe-icons-side-bar {
-		font-size: 40px;
-		color: cornflowerblue;
+		a { 
+			font-size: 40px;
+			color: black;
+			// padding: 5px;
+			&:visited {
+				color: black;
+				text-decoration: none;
+			}
+			&:hover {
+				color: cornflowerblue;
+				text-decoration: none;
+			}
+			&:active {
+				color: black;
+				text-decoration: none;
+			}
+		}
+		#about-me-side-bar {
+			img {
+				max-width: 250px;
+				max-height: 250px;
+			}
+		}
 	}
 }
 
