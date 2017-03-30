@@ -2,22 +2,50 @@
 @import 'vars.scss';
 
 body {
-	//background-color: lightgrey;
-	background-image: $bodyBgImage;
+	background-color: $lightColor;
+	//background-image: $bodyBgImage;
 	background-repeat: no-repeat;
 	//background-size: 100% 100%;
 	background-size: cover;
+}
+
+.jumbotron {
+	background-color: $lightColor;
+	//background-color: $boxTransparent !important;
+	//background-image: $bodyBgImage;
+	//color: $lightColor;
+	text-align: center;
+	font-family: 'Source Code Pro', monospace;
 }
 
 .container {
 	background-color: white;
 }
 
-.jumbotron {
-	background-color: $boxTransparent !important;
-	//background-image: $bodyBgImage;
-	color: $lightColor;
-	text-align: center;
+.top-nav-pills {
+	display: flex;
+	justify-content: center;
+	max-width: 61.5%;
+	float: none;
+	margin: 0 auto;
+	background-color: white;
+} 
+
+#search-field {
+	.stylish-input-group {
+		.input-group-addon {
+			background: white !important;
+		} 
+		.form-control {
+			border-right: 0; 
+			box-shadow: 0 0 0; 
+			border-color: #ccc;
+		}
+		button {
+			border: 0;
+    		background: transparent;
+    	}
+	}
 }
 
 .blog-post {
@@ -30,18 +58,19 @@ body {
 	}
 }
 
+.side-bar {
+	#soMe-icons-side-bar {
+		font-size: 40px;
+		color: cornflowerblue;
+	}
+}
+
 .page-nav {
 	text-align: center;
-	//justify-content: center;
-	//align-items: center;
 }
 
 .panel-footer {
 	text-align: center;
-	//text-shadow: 1px 1px black;
-	//border: 0px;
-	//box-shadow: 100px, 100px, white;
-
 	position: relative;
 	left: 0px;
 	bottom: 0px;

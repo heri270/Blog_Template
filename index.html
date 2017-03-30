@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Henriette Barchager</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200" rel="stylesheet">
+	<script src="https://use.fontawesome.com/45e298c7b4.js"></script>
 </head>
 <body>
 
@@ -13,16 +15,36 @@
 	  	<h1>Henriette Barchager</h1>
 	</div>
 
+	<div class="top-nav-pills">
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				<li role="presentation" class="clickable"><a href="#">Home</a></li>
+			</li>
+			<li class="nav-item">
+				<li role="presentation" class="clickable"><a href="#">Food Philosophy</a></li>
+			</li>
+
+			<li role="presentation" class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+					role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span>
+    			</a>
+    			<ul class="dropdown-menu">
+    				<li><a href="#">Travels</a></li>
+    				<li><a href="#">Food</a></li>
+    				<li><a href="#">Beauty</a></li>
+    			</ul>
+			</li>
+
+			<li class="nav-item">
+				<li role="presentation" class="clickable"><a href="#">About me</a></li>
+			</li>
+			<li class="nav-item">
+				<li role="presentation" class="clickable"><a href="#">Contact</a></li>
+			</li>
+		</ul>
+	</div>
+
 	<div class="container">
-		
-	  	<div class="top-nav">
-		  	<ul class="nav nav-pills">
-		  		<li role="presentation" class="disabled"><a href="#">Home</a></li>
-		  		<li role="presentation" class="clickable"><a href="#">About me</a></li>
-		  		<li role="presentation" class="clickable"><a href="#">Contact</a></li>
-		  	</ul>
-	  	</div>
-	
 		<div class="row" id="content">
 			<div class="col-md-9">
 				<div class="blog-post">
@@ -69,18 +91,33 @@
 			</div>
 
 			<div class="col-md-3">
-				<div class="about-me-side">
-					<h3>About me</h3>
-					<img src="_assets/_img/profile-pic.jpg" alt="..." class="img-thumbnail"> <!--class="img-rounded"-->
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-					<h3>Categories</h3>
+				<div class="side-bar">
+					<div id="search-field">
+						<div class="input-group stylish-input-group">
+							<input type="text" class="form-control" placeholder="Search">
+							<span class="input-group-addon">
+								<button type="submit">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div>
+					</div>
+					<div id="about-me-side-bar">
+						<h3>About me</h3>
+						<img src="_assets/_img/profile-pic.jpg" alt="..." class="img-thumbnail"> <!--class="img-rounded"-->
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					</div>
+			        <h3>Follow</h3>
+			        <div id="soMe-icons-side-bar">
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+			          	<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+			          	<i class="fa fa-instagram" aria-hidden="true"></i>
+			          	<i class="fa fa-youtube-square" aria-hidden="true"></i>
+			        </div>
+		          	<div id="popular-post-side-bar">
+		          		<h3>Popular Posts</h3>
+		          	</div>
 				</div>
-	        	<ul>
-	            	<li><a href="#">Something</a></li>
-	            	<li><a href="#">Something</a></li>
-	            	<li><a href="#">Something</a></li>
-	            	<li><a href="#">Something</a></li>
-	          </ul>
 			</div>
 		</div>
 
@@ -92,7 +129,7 @@
 				        	<span aria-hidden="true">&laquo;</span>
 				      	</a>
 			    	</li>
-				    <li><a href="#">1</a></li>
+				    <li class="active"><a href="#">1</a></li>
 				    <li><a href="#">2</a></li>
 				    <li><a href="#">3</a></li>
 				    <li><a href="#">4</a></li>

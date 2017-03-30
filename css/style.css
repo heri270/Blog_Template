@@ -1,21 +1,43 @@
 body {
-  background-image: url(../_assets/_img/tapet.jpg);
+  background-color: whitesmoke;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.jumbotron {
+  background-color: whitesmoke;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace; }
 
 .container {
   background-color: white; }
 
-.jumbotron {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-  color: whitesmoke;
-  text-align: center; }
+.top-nav-pills {
+  display: flex;
+  justify-content: center;
+  max-width: 61.5%;
+  float: none;
+  margin: 0 auto;
+  background-color: white; }
+
+#search-field .stylish-input-group .input-group-addon {
+  background: white !important; }
+#search-field .stylish-input-group .form-control {
+  border-right: 0;
+  box-shadow: 0 0 0;
+  border-color: #ccc; }
+#search-field .stylish-input-group button {
+  border: 0;
+  background: transparent; }
 
 .blog-post .thumbnail {
   max-width: 850px;
   max-height: 350px; }
 .blog-post p {
   width: 850px; }
+
+.side-bar #soMe-icons-side-bar {
+  font-size: 40px;
+  color: cornflowerblue; }
 
 .page-nav {
   text-align: center; }
