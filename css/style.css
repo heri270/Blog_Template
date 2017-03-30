@@ -1,3 +1,32 @@
+body {
+  background-image: url(../_assets/_img/IMG_5886.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
+.container {
+  background-color: white; }
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  color: whitesmoke;
+  text-align: center; }
+
+.blog-post .thumbnail {
+  max-width: 850px;
+  max-height: 350px; }
+.blog-post p {
+  width: 850px; }
+
+.page-nav {
+  text-align: center; }
+
+.panel-footer {
+  text-align: center;
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
+  padding: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
